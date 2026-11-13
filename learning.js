@@ -1,3 +1,5 @@
+// This was just me learning the library and how to use it.
+
 import * as paillierBigint from './paillier-bigint.js';
 import * as bigintConversion from './bigint-conversion.js';
 
