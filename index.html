@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encrypted Math</title>
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <h1>Encrypted Math</h1>
+    <p>Welcome to the Encrypted Math application!</p>
+
+    <div>
+        <h2>Encrypt a Number</h2>
+        <input type="number" id="numberToEncrypt" placeholder="Enter a number"><br>
+        <input type="text" id="publicKey" placeholder="Enter public key">
+        <button id="encryptButton">Encrypt</button>
+        <p>Encrypted Result: <input type="text" id="encryptedResult" readonly></p>
+    </div>
+    <div>
+        <h2>Decrypt a Number</h2>
+        <input type="text" id="encryptedNumber" placeholder="Enter encrypted number"><br>
+        <input type="text" id="privateKey" placeholder="Enter private key"><br>
+        <input type="text" id="publicKeyForDecryption" placeholder="Enter public key">
+        <button id="decryptButton">Decrypt</button>
+        <p>Decrypted Result: <input type="text" id="decryptedResult" readonly></p>
+    </div>
+    <div>
+        <h2>Perform Encrypted Addition</h2>
+        <input type="text" id="encryptedNumber1" placeholder="Enter first encrypted number"><br>
+        <input type="text" id="encryptedNumber2" placeholder="Enter second encrypted number"><br>
+        <input type="text" id="publicKeyForAddition" placeholder="Enter public key">
+        <button id="addButton">Add</button>
+        <p>Encrypted Sum: <input type="text" id="encryptedSumResult" readonly></p>
+    </div>
+    <div>
+        <h2>Perform Encrypted Multiplication</h2>
+        <input type="text" id="encryptedNumberForMultiplication" placeholder="Enter encrypted number"><br>
+        <input type="number" id="scalar" placeholder="Enter scalar value"><br>
+        <input type="text" id="publicKeyForMultiplication" placeholder="Enter public key"><br>
+        <button id="multiplyButton">Multiply</button>
+        <p>Encrypted Product: <input type="text" id="encryptedProductResult" readonly></p>
+    </div>
+    <div>
+        <h2>Generate Key Pair</h2>
+        <button id="generateKeyPairButton">Generate Key Pair</button>
+        <p>Public Key: <input type="text" id="generatedPublicKey" readonly></p>
+        <p>Private Key: <input type="text" id="generatedPrivateKey" readonly></p>
+        <button id="copyPublicKeyURLButton">Copy URL with Public Key</button>
+    </div>
+</body>
+</html>
